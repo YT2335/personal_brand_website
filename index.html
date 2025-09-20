@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap-icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>個人品牌網站 | 首頁</title>
+    <script type="module" crossorigin src="/personal_brand_website/assets/main-CmZLv791.js"></script>
+    <link rel="stylesheet" crossorigin href="/personal_brand_website/assets/main-CGG2hNZU.css">
+  </head>
+  <body>
+    <ul class="nav justify-content-center gap-6 bg-bgcolor">
+  <li class="nav-item">
+    <a
+      class="nav-link active text-dark fw-bold fs-3 px-0 py-5"
+      aria-current="page"
+      href="index"
+      >首頁</a
+    >
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark fw-bold fs-3 px-0 py-5" href="blog">部落格</a>
+  </li>
+</ul>
+
+    <main class="bg-bgcolor">
+      <div class="banner container-fluid px-0 d-lg-flex align-items-stretch">
+        <picture class="w-50">
+          <source
+            media="(max-width: 768px)"
+            srcset="../assets/images/index/mobile/Hero Section.png"
+          />
+          <img
+            src="/personal_brand_website/assets/Hero%20Section-DXCW-MGM.png"
+            alt="Hero Section"
+            class="w-100 img-fluid h-100 object-fit-cover"
+          />
+        </picture>
+        <div
+          class="d-lg-flex align-items-center"
+          style="
+            background-image: url('../assets/images/index/Hero\ Section2.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="banner-title">
+            <h1 class="fw-bold text-primary mb-3">Alyse Wang</h1>
+            <h2 class="fw-bold text-primary fs-3">前端工程師 & 職涯諮詢師</h2>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card d-lg-flex flex-column">
+        <p class="fw-medium fs-lg-3 fs-4">
+          嗨，我是 Alyse 一名深耕前端技術的工程師。
+        </p>
+        <p class="fw-medium fs-lg-3 fs-4">
+          擅長 React、Vue
+          等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
+        </p>
+        <ul class="list-unstyled d-flex gap-1">
+          <li>
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFzSURBVHgB7ZbBTcMwFIb/51bAMSOECwKVCjoBdAOYADYANqATwAhlA0ZghHJAza1mgxxAQkiJcRoJqREov6P41PdJUfTk5+j3y/NvA4qiKIqiKFuEoAuHyxSDQYKiSHyUbg6WjdjYxmz7+86OmmOthAk+WF5Bikc/LUE/WK9ghmw0ZyfwgququnKFGEg5RTZ+YVINWFxxi1g4uWBTecEwJ4iGOaMzQePa+9Zh4f+vRTCO3hO8YAHz0QVEpr4nZwgjgmBHVqGyqmx8DzH7EPcEjgiCQ61sLfz4GiUm3drkbwIEd2RgqoVa9MSQT3V5UJVr337wD21ZDLxgkdy7QLvgdJVg5+um9m16gTmZF1JhAsE5dj9XtdCgU58WHOASlce2kna6Zwi/KUMOjnfEwpWvbGrAweGeEYuhzNlUXnB1m3LFZZ+einXvuju8jZh2W9PtAl85wd7HaR2YtDnaiO1mWFrvzTmK7xzZxEJRFEVRFEX5nx8s4GCDOk30GwAAAABJRU5ErkJggg==" alt="youtube" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANZSURBVHgB7VddVhMxFP4yrW0VzxFW4PCgyKkehhVYV0BZAXQF1BVAVyBdgWUF6goYVkAfrIA+MKzA8iDQ1pnrvZnpDz2UZoJPOt85YUJyk365ufluAmTIkCFDhgz/MhTSotzxMMAOlKoA5MIGhDb/bcNxGjhdDdIMTUf45ckWVNTC3wQ52/i+emBqbk741YkLis4NLNs8q5RFkOJClbkj8lhHp9yGARwYI9q9p7PLnm+g92QJytnkaQ/Yc032Ry1uQ43rwczREmKGMCdM8Gb0fGZSyzxVgOL1J70LFB0m5RyFq0NtpdQ7bXsXFCowRB7m8GaQrcVE5UeJPY0Wt18kRNYQocp9H7kvti39uuRQ2Zqax4UhUoTENHiLNdkrIVPB2NMHUEKci4SFcpa5zoeKqnphN4P6veExB2k8PMWXGihdifequOVpJk/DsxxJKLXQX6izZ6W+hWJxW4/VXrf4WWPLlQ5N/NfFWXmJ2871FBKfRENPd/k7lCneelYKKB+93iaKj2L7Xn85qS+OZjwrG3GxCwml2njRkZhmqSNff5HIF7EynL2u66JoMx7AfaW82MtCFrGw4OpFWMCOcEQBVOgmMxxxQ2XU13/sj+qnb8Z1UlW9UEE4YPJ0AQtYepgu4eTG20k0rhevt0f1lW/G+moKu0NH6hmfp7ZeLpHHeutD5RJy9IGJvoVsPSaynHhXbPWxiQL21QYsYOlhVoYfkkpZusCa2g/9sVQRS1kopRHLmR4Q4LTc4u9GXNeh4sECtirBIyPOXA5LGDhlq332YJM9fazV49a4rz/Z++u8I3Jx2tMpHHlfZ8JJGKqEvQ5TbjeWqiJLF9URKcly3bttia+jFCeMm6f7nGyOYYkHZDqOz0JpJ74jMBHx3p0pVrQ2ISu2hZsdpEjF03gAYeHCJGWre711PkhN3SbX0CGGdX2TezwOiwfAPiSGEALFAmus857j8jlyE3InnlSSIDhmJW3D4G48B+aEFQI+YO6MXm90iMLBFwBxglChx7FdmU9UGV3eBSlCgo7MzNTGRH3NbAwZEzaXNXl8/obp6Q7iqQ0fqXIFNXyMmntY3lz6qWME15xsWEvzck7/zNcnP9xLttsqW/FBDHhBPnJomj4+M2TIkCFDhv8DfwD4lkZi6vBtlwAAAABJRU5ErkJggg=="
+                alt="applepocast"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJESURBVHgB7ZfPddNAEMa/3fCCDxxcgnLBAZP37AowFZAS7ApCKoipAHcQUgFJBTgVOByU2FxQB+gEvljD7C5J7ER/ZiXnkre/iyV5dvS90bezu0AgEAgEAs8ZhW0Q/Wpjd3kERQNzB1Dk/qAU0FfQ2QVo5xzzNwka0kzw/k0EolMWNhDFE75C689NhGvUpXN9BFrNxGINCkNQNuOxn1CTeoJf35yw0AkraMMfHkNfXA5//C1hKmvFVmVWU67mD/5N7T0RC1Xv+aq3FnSMxdvqXOtpfYKdZ40NyiqrEqjVCPOD6ePxMVsCp2tPUijd9/G0pyWyk2qx6kOu2HzabtLKkQu21eVJUwbR1L8D8KQ1bVHIC2kgf+ZDUIWDdHb26Fkn/uY6CX8ZKhjX+mO6xhgC5IIz/RGFb7xLl2zcOs8eVk4VspNRhIeHsx78iWRhJIzzElyr50qJpIHyttaJ8/1gltuf3RFEOa6/F66Mi65Ii7zCCgkaU2irFELkgol7bBOiWbvQVkpdQYhHW6NL/vyDnJdF3KOH9nrZOkeyd1+tbtzDSv+vahYVNhnCBaQypIG2Qi93f5dn03sbC8d+PGYx1Zuch+NKkFsi6XPleEOzbcykfbK9hFIjd4rYGqnd0HvgJ9hVwusF5ZD36cN/A794N4HKmos2OUwuT+qdOOYHY67OcU17pHaszeFP/TOdrfROn9vdmXiMOYWYDXuNyt4i78N5OP8NuQ+P7fbzb2uz4soe86fA6hLLV5ONHh0IBAKBQCCHf7izv1H99hdTAAAAAElFTkSuQmCC" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF9SURBVHgB7ZfRTcMwEIZ/h0hFPHWE9qUtQgiyAWxQNigjdBJgAsIG2aDZoAhRCE9khPJSRB5qzq4IogJ0ceIIofukSM7Fcf6cz+czIAiCIAj/GcXu2XvuorO6BvQJvdZFU2jEKPamyPtLTvcQXHZXFzT4uMo/slCYoPNqHHDG6R6Ai6aBvWFmjQdfsF/YIVZH8JKmM4ZSKVqEH8PbqCBCtp/b9vBhVmVa69BQSGjWCm8Cdw/r9QyDRUoh0WvLuwZ3wZSZbUqi9NEm7iGhin55AcnGtj4tbYGe2gWpcG7vQ0S2DZWjBu4ezqK8bI/uX6DNhhLmyA439tFjQovycuutW7KnFE5z193SXx7+yCDf2ZW6giN+Nw6T7oYLTYtzbmuRz8/GcMSf4MHduMweCsdUL0zKZz95n4E/wcHO1xjV+ggN8FdqCTYi2Dci2Df8847Jpz55OmBpqeDh9krI36gg2OPJwpycmfAFvxVUdekbNIuZtcQe8wVBEARBIN4BkDhgOD/HLNIAAAAASUVORK5CYII="
+                alt="linkedin"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMkSURBVHgB7ZfRUdtAEIb/kwiQTB6UDsSLbXBI7AoCHUAFkAoIFWAqwK6AoQJIBYQKIAFjzAvqIHrIMDaDdNm9O2MbW/hk4ZdE34zsk3Q6/drb3dsDcnJycnJy/mUEpsG/8zDf2YGQa3wGxB4N5U1+UAT0w8cFhGjgZjlAStILLl7vkMCancAJSKeG2+X9NI+kE1xo7UGwWH4ZWcmVR4jiAI4I4Tohoodw7HPuvEf99AcKUUHs0EdL30jYRXulDkvsBZdaPmR8p09kA+2P35CF4iWJZOEI0X23hGAptHnMgS0yMgLJD6cVy+5UaJ7TTG2hvcpjXNDhYfHeejx7wXA+m0ZjYleeDT5GkHWa0woFqxbokEupy+ILLLEXLIzPiegCSSKL1wcoXv1WrsMHtwvNw774uGHG+K7+2f+1Yh+WzNl2pCDzE++VmxU8Rqc6cwyGBZ0LbJP4NeqziWaZLduffudNSPe4ZZ1xUriEwV0YDg623iOOjdiAssg6BdEHtMuC/H7T5F7uczriJlHcG2uGgqPoWTTHe0oQC+u+reJm9cdTxN9+OkG3WzWivX7gGjgVpiS94OdIuWFG2h2bmoJqSD77VZ+ILWQkm2A1xWbFa62cJPbrPPYC1RufPezJbuEeXF8kwVZ+JbIJVsWL1GIW/1QS+xV+bZhWOE3BM8hrWNgkf+dwrJX5mnAPdB+cICNTpDV3WJRw68bKPhbuadm93ngSWmqtqWu9LOI4w5VZryCajWAz9VF3+CU8xXNi/SnfCnmMYlOSUF7xTtU1doU5uTniDq4zQ8FCaMHCHX1Js8wF+TqJPVLi+oSqshNOVfVJJoAlKZZmtiCt+XHCEq2tt63apXPd56YavDQk5ecKjcvGeLnfAGmKnzP1L+Xk5M9CJ4llYrGjx4x/whJ7wZ0HHVxcHnJVlhU9hq/aKnDtSLdFKl5RLSB6YinqyT+lq33TdcPROsPAmSWKPMTSgxv7iGiJ5g9XCuJ9qj9qmIlgpnRZo5y7h+xwQO7T7sXausx023y1v6PKS6hdCLWtCvDQZJqAcuMZOu/rtvu4nJycnJyc/4e/gTArkFSTJdIAAAAASUVORK5CYII="
+                alt="instagram"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 專業服務與方案 -->
+      <section>
+        <div class="container py-lg-20 py-9">
+          <h2 class="fw-bold fs-lg-7 fs-8 mb-8">專業服務與方案</h2>
+          <div class="row">
+            <div
+              class="col-lg-10 mx-auto d-lg-flex align-items-center mb-lg-9 mb-8"
+            >
+              <picture class="w-100">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/personal_brand_website/assets/photo1-CozKlaHy.png"
+                />
+                <img
+                  src="/personal_brand_website/assets/photo-e5QTaJnx.png"
+                  alt="photo"
+                  class="img-fluid w-100 d-block"
+                />
+              </picture>
+              <div class="plan-text-left bg-white p-5">
+                <i class="bi bi-dash-lg fs-1 text-primary"></i>
+                <h3 class="fw-bold fs-3">履歷健檢</h3>
+                <p class="fw-medium fs-6 text-secondary-30">
+                  履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-10 mx-auto d-lg-flex align-items-center flex-row-reverse mb-lg-9 mb-8"
+            >
+              <picture class="w-100">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/personal_brand_website/assets/photo2-BmADUwWJ.png"
+                />
+                <img
+                  src="/personal_brand_website/assets/photo2-BcOt4XgM.png"
+                  alt="photo2"
+                  class="img-fluid w-100 d-block"
+                />
+              </picture>
+              <div class="plan-text-right bg-white p-5">
+                <i class="bi bi-dash-lg fs-1 text-primary"></i>
+                <h3 class="fw-bold fs-3">線上諮詢</h3>
+                <p class="fw-medium fs-6 text-secondary-30">
+                  想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-10 mx-auto d-lg-flex align-items-center mb-lg-9 mb-8"
+            >
+              <picture class="w-100">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/personal_brand_website/assets/photo3-D28P8jxw.png"
+                />
+                <img
+                  src="/personal_brand_website/assets/photo3-YkWfwob5.png"
+                  alt="photo3"
+                  class="img-fluid w-100 d-block"
+                />
+              </picture>
+              <div class="plan-text-left bg-white p-5">
+                <i class="bi bi-dash-lg fs-1 text-primary"></i>
+                <h3 class="fw-bold fs-3">網頁開發</h3>
+                <p class="fw-medium fs-6 text-secondary-30">
+                  想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-10 mx-auto d-lg-flex align-items-center flex-row-reverse mb-lg-9 mb-8"
+            >
+              <picture class="w-100">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/personal_brand_website/assets/photo4-BDDbkpd8.png"
+                />
+                <img
+                  src="/personal_brand_website/assets/photo4-C76UINVa.png"
+                  alt="photo4"
+                  class="img-fluid w-100 d-block"
+                />
+              </picture>
+              <div class="plan-text-right bg-white p-5">
+                <i class="bi bi-dash-lg fs-1 text-primary"></i>
+                <h3 class="fw-bold fs-3">企業內訓</h3>
+                <p class="fw-medium fs-6 text-secondary-30">
+                  想讓團隊快速掌握前端最新技術或優化現有專案流程？我可協助打造專業、實用的企業內訓課程，一次解決團隊痛點。
+                </p>
+              </div>
+            </div>
+          </div>
+          <p
+            class="fw-bold fs-3 d-flex flex-column flex-md-row align-items-md-center justify-content-end align-items-end"
+          >
+            聯繫我，取得更多資訊！<span
+              ><i class="bi bi-arrow-right-circle fs-1"></i
+            ></span>
+          </p>
+        </div>
+      </section>
+      <!-- 部落格精選 -->
+      <section class="border-top border-bottom border-secondary-10">
+        <div class="container py-20">
+          <h2 class="fw-bold fs-7 mb-8">部落格精選</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card border-0 bg-bgcolor position: relative">
+                  <img
+                    src="/personal_brand_website/assets/photo5-BbfCMuC2.png"
+                    class="card-img-top rounded-0"
+                    alt="React"
+                  />
+                  <div class="card-body px-0">
+                    <p class="fw-medium fs-6 mb-1">2024/10/21</p>
+                    <div class="d-inline-flex align-items-center">
+                      <a href="#" class="fw-medium fs-4 text-decoration-none"
+                        >#前端開發
+                      </a>
+                      <a href="#" class="fw-medium fs-4 text-decoration-none"
+                        >#職涯成長</a
+                      >
+                      <span
+                        class="btn fs-6 fw-bold text-light bg-primary rounded-4 ms-2"
+                        >最新文章</span
+                      >
+                    </div>
+                    <h3 class="card-title fw-bold fs-3 mb-2">
+                      自學前端不用怕：從零開始的三大關鍵
+                    </h3>
+                    <p
+                      class="card-text text-secondary-30 fw-medium fs-6 mb-4 text-truncate-2"
+                    >
+                      嗨，我是
+                      Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
+                      其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！
+                    </p>
+                    <a
+                      href="blog_detail"
+                      class="btn btn-light text-secondary-30 border rounded-pill py-2 px-4 stretched-link"
+                      >閱讀內文</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 bg-bgcolor position-relative">
+                  <img
+                    src="/personal_brand_website/assets/photo3-_24orI3u.png"
+                    class="card-img-top rounded-0"
+                    alt="React"
+                  />
+                  <div class="card-body px-0">
+                    <p class="fw-medium fs-6 mb-1">2024/07/08</p>
+                    <div class="d-inline-flex align-items-centers">
+                      <a href="#" class="fw-medium fs-4 text-decoration-none"
+                        >#面試準備
+                      </a>
+                      <a href="#" class="fw-medium fs-4 text-decoration-none"
+                        >#工程師求職</a
+                      >
+                      <span
+                        class="btn fs-6 fw-bold text-light bg-primary rounded-4 ms-2"
+                        >人氣文章</span
+                      >
+                    </div>
+                    <h3 class="card-title fw-bold fs-3 mb-2">
+                      前端面試不再慌：破解常見提問的三大策略
+                    </h3>
+                    <p
+                      class="card-text text-secondary-30 fw-medium fs-6 mb-4 text-truncate-2"
+                    >
+                      面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官關注的重點並不僅是程式碼本身，更包含問題解決的流程與溝通能力。這篇文章將分享我在面試過程中常見的三大難題，以及如何以更具條理的方式回應，讓你在面試場合中脫穎而出。
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-light text-secondary-30 border rounded-pill py-2 px-4 stretched-link"
+                      >閱讀內文</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 bg-bgcolor position: relative">
+                  <img
+                    src="/personal_brand_website/assets/photo2-BtVCsI_m.png"
+                    class="card-img-top rounded-0"
+                    alt="CSS設計"
+                  />
+                  <div class="card-body px-0">
+                    <p class="fw-medium fs-6 mb-1">2024/09/03</p>
+                    <div>
+                      <a href="#" class="fw-medium fs-4 text-decoration-none"
+                        >#CSS設計</a
+                      >
+                      <a href="#" class="fw-medium fs-4 text-decoration-none"
+                        >#視覺體驗</a
+                      >
+                    </div>
+                    <h3 class="card-title fw-bold fs-3 mb-2">
+                      CSS 魔法大揭密：排版與設計的三大關鍵技巧
+                    </h3>
+                    <p
+                      class="card-text text-secondary-30 fw-medium fs-6 mb-4 text-truncate-2"
+                    >
+                      在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，往往讓人抓破頭皮。這篇文章想跟大家分享我在實務專案中累積的三大技巧，幫助你更有效率地駕馭
+                      CSS，打造兼具美感與功能性的網頁。
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-light text-secondary-30 border rounded-pill py-2 px-4 stretched-link"
+                      >閱讀內文</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 bg-bgcolor position: relative">
+                  <img
+                    src="/personal_brand_website/assets/photo4-xUGWCNMf.png"
+                    class="card-img-top rounded-0"
+                    alt="React"
+                  />
+                  <div class="card-body px-0">
+                    <p class="fw-medium fs-6 mb-1">2024/10/11</p>
+                    <div>
+                      <a href="#" class="fw-medium fs-4 text-decoration-none"
+                        >#React</a
+                      >
+                      <a href="#" class="fw-medium fs-4 text-decoration-none"
+                        >#入門基礎</a
+                      >
+                    </div>
+                    <h3 class="card-title fw-bold fs-3 mb-2">
+                      React 入門不再迷惘：三步驟帶你上手核心概念
+                    </h3>
+                    <p
+                      class="card-text text-secondary-30 fw-medium fs-6 mb-4 text-truncate-2"
+                    >
+                      你是否對 React
+                      感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React
+                      到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握
+                      React 核心概念，真正把理論應用在實際專案中。
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-light text-secondary-30 border rounded-pill py-2 px-4 stretched-link"
+                      >閱讀內文</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 職涯諮詢成功案例 -->
+      <section class="border-bottom border-secondary-10">
+        <div class="container py-lg-20 py-9">
+          <h2 class="fw-bold fs-7 mb-5 d-none d-lg-block">職涯諮詢成功案例</h2>
+          <h2 class="fw-bold fs-8 mb-5 d-lg-none d-block">
+            職涯諮詢<br />成功案例
+          </h2>
+          <div class="row mb-6 mx-0">
+            <div class="col-lg-7 bg-secondary-20 px-0">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/personal_brand_website/assets/photo8-C29SUFJq.png"
+                />
+                <img
+                  src="/personal_brand_website/assets/photo8-DJ8uxxFz.png"
+                  alt="photo8"
+                  class="p-5 img-fluid w-100 h-100 object-fit-cover"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-5 px-0 px-lg-3">
+              <div
+                class="card-trns-1 bg-white py-lg-20 py-6 px-lg-6 px-5 mb-3 mb-lg-0"
+              >
+                <i class="bi bi-dash-lg fs-1 text-primary"></i>
+                <p class="fw-bold fs-6">
+                  在職涯發展的關鍵轉折點上，適時的協助與正確的方向至關重要。藉由職涯諮詢，我可以幫助你加速釐清目標、建立更全面的技術與軟實力，並有效<span
+                    class="text-primary fw-bold fs-6"
+                    >突破原有的舒適圈</span
+                  >。
+                </p>
+              </div>
+              <div
+                class="card-trns-2 bg-secondary-40 py-lg-20 py-6 px-lg-6 px-5"
+              >
+                <i class="bi bi-dash-lg fs-1 text-primary"></i>
+                <p class="fw-bold fs-6">
+                  期待在下一個新機會中，我能與你一起攜手邁向更高峰！
+                </p>
+                <button
+                  type="button"
+                  class="btn border border-primary rounded-pill text-primary fw-bold fs-6 bg-white"
+                >
+                  立即預約諮詢
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row bg-secondary-40 p-5 mx-0">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <img
+                src="/personal_brand_website/assets/people-DPJP8G3j.png"
+                alt="people"
+                class="mb-4"
+              />
+              <h4 class="fw-bold fs-4 mb-2">無經驗到前端工程師 Offer</h4>
+              <ul class="list-unstyled border-bottom border-secondary-30 pb-4">
+                <li class="mb-2">
+                  <i class="bi bi-check-square-fill text-primary"></i>
+                  <span class="fw-medium fs-6 text-secondary-30 ms-2"
+                    >打造前端專案與履歷亮點</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-square-fill text-primary"></i>
+                  <span class="fw-medium fs-6 text-secondary-30 ms-2"
+                    >打造前端專案與履歷亮點</span
+                  >
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-light border rounded-pill text-secondary-30"
+              >
+                前往聆聽 podcast
+              </button>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <img
+                src="/personal_brand_website/assets/people2-DDKsqoIp.png"
+                alt="people2"
+                class="mb-4"
+              />
+              <h4 class="fw-bold fs-4 mb-2">轉職迷茫到明確學習規劃</h4>
+              <ul class="list-unstyled border-bottom border-secondary-30 pb-4">
+                <li class="mb-2">
+                  <i class="bi bi-check-square-fill text-primary"></i>
+                  <span class="fw-medium fs-6 text-secondary-30 ms-2"
+                    >制訂階段性目標與時間安排</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-square-fill text-primary"></i>
+                  <span class="fw-medium fs-6 text-secondary-30 ms-2"
+                    >鼓勵參與前端社群或活動</span
+                  >
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-light border rounded-pill text-secondary-30"
+              >
+                前往聆聽 podcast
+              </button>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <img
+                src="/personal_brand_website/assets/people3-48OdpU-E.png"
+                alt="people3"
+                class="mb-4"
+              />
+              <h4 class="fw-bold fs-4 mb-2">面試緊張到從容應對</h4>
+              <ul class="list-unstyled border-bottom border-secondary-30 pb-4">
+                <li class="mb-2">
+                  <i class="bi bi-check-square-fill text-primary"></i>
+                  <span class="fw-medium fs-6 text-secondary-30 ms-2"
+                    >透過面試模擬找出常犯的邏輯漏洞</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-square-fill text-primary"></i>
+                  <span class="fw-medium fs-6 text-secondary-30 ms-2"
+                    >討論遇到不熟悉議題時的回應方式</span
+                  >
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-light border rounded-pill text-secondary-30"
+              >
+                前往聆聽 podcast
+              </button>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <img
+                src="/personal_brand_website/assets/people4-BL19gB8F.png"
+                alt="people4"
+                class="mb-4"
+              />
+              <h4 class="fw-bold fs-4 mb-2">面試緊張到從容應對</h4>
+              <ul class="list-unstyled border-bottom border-secondary-30 pb-4">
+                <li class="mb-2">
+                  <i class="bi bi-check-square-fill text-primary"></i>
+                  <span class="fw-medium fs-6 text-secondary-30 ms-2"
+                    >擬定進階框架或技術研究目標</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-square-fill text-primary"></i>
+                  <span class="fw-medium fs-6 text-secondary-30 ms-2"
+                    >培養跨團隊溝通與簡報能力</span
+                  >
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-light border rounded-pill text-secondary-30"
+              >
+                前往聆聽 podcast
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 訂閱電子報 -->
+      <div class="banner container-fluid px-0 d-lg-flex">
+        <picture class="w-50">
+          <source
+            media="(max-width: 768px)"
+            srcset="/personal_brand_website/assets/photo9-VeK9WkE7.png"
+          />
+          <img
+            src="/personal_brand_website/assets/photo9-Bv7Pfn-2.png"
+            alt="Hero Section"
+            class="w-100 img-fluid h-100 object-fit-cover"
+          />
+        </picture>
+        <div
+          class="d-flex align-items-lg-center"
+          style="
+            background-image: url('../assets/images/index/Hero\ Section2.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="banner-card bg-white mx-lg-20 m-3 p-lg-20 px-5 py-6">
+            <h2 class="fw-bold fs-lg-7 fs-8 mb-4">訂閱電子報</h2>
+            <p class="fw-medium fs-5">
+              立即訂閱，搶先掌握<span class="text-primary">前端 x 職涯</span
+              >的獨家資訊！
+            </p>
+            <input
+              class="form-control mb-2 rounded-0 border-0 bg-secondary-50"
+              type="text"
+              placeholder="請輸入您的大名"
+              aria-label="請輸入您的大名"
+            />
+            <input
+              class="form-control mb-5 rounded-0 border-0 bg-secondary-50"
+              type="text"
+              placeholder="請輸入您的電子信箱"
+              aria-label="請輸入您的電子信箱"
+            />
+            <button
+              type="button"
+              class="btn btn-outline-primary rounded-pill fw-bold"
+            >
+              啟動訂閱
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 與我聯繫 -->
+      <div class="container py-lg-20 py-9">
+        <h2 class="fw-bold fs-lg-7 fs-8 mb-5">與我聯繫</h2>
+        <ul class="list-unstyled">
+          <li
+            class="d-lg-flex justify-content-between border-bottom border-dark mb-4 position-relative"
+          >
+            <a
+              href="#"
+              class="d-lg-flex align-items-center stretched-link text-decoration-none text-dark"
+            >
+              <p class="fw-medium fs-lg-2 fs-4 text-decoration-underline me-4">
+                alysewang@hexschool.com
+              </p>
+              <p class="fw-medium fs-3">合作洽談</p>
+            </a>
+            <i class="bi bi-arrow-right fs-4"></i>
+          </li>
+          <li
+            class="d-lg-flex align-items-center justify-content-between border-bottom border-dark mb-4 position-relative"
+          >
+            <div class="d-flex">
+              <a
+                href="https://www.youtube.com/"
+                class="stretched-link"
+                target="_blank"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFzSURBVHgB7ZbBTcMwFIb/51bAMSOECwKVCjoBdAOYADYANqATwAhlA0ZghHJAza1mgxxAQkiJcRoJqREov6P41PdJUfTk5+j3y/NvA4qiKIqiKFuEoAuHyxSDQYKiSHyUbg6WjdjYxmz7+86OmmOthAk+WF5Bikc/LUE/WK9ghmw0ZyfwgququnKFGEg5RTZ+YVINWFxxi1g4uWBTecEwJ4iGOaMzQePa+9Zh4f+vRTCO3hO8YAHz0QVEpr4nZwgjgmBHVqGyqmx8DzH7EPcEjgiCQ61sLfz4GiUm3drkbwIEd2RgqoVa9MSQT3V5UJVr337wD21ZDLxgkdy7QLvgdJVg5+um9m16gTmZF1JhAsE5dj9XtdCgU58WHOASlce2kna6Zwi/KUMOjnfEwpWvbGrAweGeEYuhzNlUXnB1m3LFZZ+einXvuju8jZh2W9PtAl85wd7HaR2YtDnaiO1mWFrvzTmK7xzZxEJRFEVRFEX5nx8s4GCDOk30GwAAAABJRU5ErkJggg=="
+                  alt="youtube"
+                  class="me-2"
+                />
+              </a>
+              <p class="fw-medium fs-lg-3 fs-4">
+                Youtube<span class="fw-medium fs-lg-3 fs-4 ms-2"
+                  >職涯諮詢室</span
+                >
+              </p>
+            </div>
+            <i class="bi bi-arrow-right fs-4"></i>
+          </li>
+          <li
+            class="d-lg-flex align-items-center justify-content-between border-bottom border-dark mb-4 position-relative"
+          >
+            <div class="d-flex">
+              <a href="#" class="stretched-link" target="_blank">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANZSURBVHgB7VddVhMxFP4yrW0VzxFW4PCgyKkehhVYV0BZAXQF1BVAVyBdgWUF6goYVkAfrIA+MKzA8iDQ1pnrvZnpDz2UZoJPOt85YUJyk365ufluAmTIkCFDhgz/MhTSotzxMMAOlKoA5MIGhDb/bcNxGjhdDdIMTUf45ckWVNTC3wQ52/i+emBqbk741YkLis4NLNs8q5RFkOJClbkj8lhHp9yGARwYI9q9p7PLnm+g92QJytnkaQ/Yc032Ry1uQ43rwczREmKGMCdM8Gb0fGZSyzxVgOL1J70LFB0m5RyFq0NtpdQ7bXsXFCowRB7m8GaQrcVE5UeJPY0Wt18kRNYQocp9H7kvti39uuRQ2Zqax4UhUoTENHiLNdkrIVPB2NMHUEKci4SFcpa5zoeKqnphN4P6veExB2k8PMWXGihdifequOVpJk/DsxxJKLXQX6izZ6W+hWJxW4/VXrf4WWPLlQ5N/NfFWXmJ2871FBKfRENPd/k7lCneelYKKB+93iaKj2L7Xn85qS+OZjwrG3GxCwml2njRkZhmqSNff5HIF7EynL2u66JoMx7AfaW82MtCFrGw4OpFWMCOcEQBVOgmMxxxQ2XU13/sj+qnb8Z1UlW9UEE4YPJ0AQtYepgu4eTG20k0rhevt0f1lW/G+moKu0NH6hmfp7ZeLpHHeutD5RJy9IGJvoVsPSaynHhXbPWxiQL21QYsYOlhVoYfkkpZusCa2g/9sVQRS1kopRHLmR4Q4LTc4u9GXNeh4sECtirBIyPOXA5LGDhlq332YJM9fazV49a4rz/Z++u8I3Jx2tMpHHlfZ8JJGKqEvQ5TbjeWqiJLF9URKcly3bttia+jFCeMm6f7nGyOYYkHZDqOz0JpJ74jMBHx3p0pVrQ2ISu2hZsdpEjF03gAYeHCJGWre711PkhN3SbX0CGGdX2TezwOiwfAPiSGEALFAmus857j8jlyE3InnlSSIDhmJW3D4G48B+aEFQI+YO6MXm90iMLBFwBxglChx7FdmU9UGV3eBSlCgo7MzNTGRH3NbAwZEzaXNXl8/obp6Q7iqQ0fqXIFNXyMmntY3lz6qWME15xsWEvzck7/zNcnP9xLttsqW/FBDHhBPnJomj4+M2TIkCFDhv8DfwD4lkZi6vBtlwAAAABJRU5ErkJggg=="
+                  alt="applepocast"
+                  class="me-2"
+                />
+              </a>
+              <p class="fw-medium fs-lg-3 fs-4">
+                podcast<span class="fw-medium fs-lg-3 fs-4 ms-4"
+                  >職涯諮詢室</span
+                >
+              </p>
+            </div>
+            <i class="bi bi-arrow-right fs-4"></i>
+          </li>
+          <li
+            class="d-lg-flex align-items-center justify-content-between border-bottom border-dark mb-4 position-relative"
+          >
+            <div class="d-flex">
+              <a
+                href="https://www.youtube.com/"
+                class="stretched-link"
+                target="_blank"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJESURBVHgB7ZfPddNAEMa/3fCCDxxcgnLBAZP37AowFZAS7ApCKoipAHcQUgFJBTgVOByU2FxQB+gEvljD7C5J7ER/ZiXnkre/iyV5dvS90bezu0AgEAgEAs8ZhW0Q/Wpjd3kERQNzB1Dk/qAU0FfQ2QVo5xzzNwka0kzw/k0EolMWNhDFE75C689NhGvUpXN9BFrNxGINCkNQNuOxn1CTeoJf35yw0AkraMMfHkNfXA5//C1hKmvFVmVWU67mD/5N7T0RC1Xv+aq3FnSMxdvqXOtpfYKdZ40NyiqrEqjVCPOD6ePxMVsCp2tPUijd9/G0pyWyk2qx6kOu2HzabtLKkQu21eVJUwbR1L8D8KQ1bVHIC2kgf+ZDUIWDdHb26Fkn/uY6CX8ZKhjX+mO6xhgC5IIz/RGFb7xLl2zcOs8eVk4VspNRhIeHsx78iWRhJIzzElyr50qJpIHyttaJ8/1gltuf3RFEOa6/F66Mi65Ii7zCCgkaU2irFELkgol7bBOiWbvQVkpdQYhHW6NL/vyDnJdF3KOH9nrZOkeyd1+tbtzDSv+vahYVNhnCBaQypIG2Qi93f5dn03sbC8d+PGYx1Zuch+NKkFsi6XPleEOzbcykfbK9hFIjd4rYGqnd0HvgJ9hVwusF5ZD36cN/A794N4HKmos2OUwuT+qdOOYHY67OcU17pHaszeFP/TOdrfROn9vdmXiMOYWYDXuNyt4i78N5OP8NuQ+P7fbzb2uz4soe86fA6hLLV5ONHh0IBAKBQCCHf7izv1H99hdTAAAAAElFTkSuQmCC"
+                  alt="Facebook"
+                  class="me-2"
+                />
+              </a>
+              <p class="fw-medium fs-lg-3 fs-4">
+                Facebook<span class="fw-medium fs-lg-3 fs-4 ms-2"
+                  >前端社群</span
+                >
+              </p>
+            </div>
+            <i class="bi bi-arrow-right fs-4"></i>
+          </li>
+          <li
+            class="d-lg-flex align-items-center justify-content-between border-bottom border-dark mb-4 position-relative"
+          >
+            <div class="d-flex">
+              <a href="#" class="stretched-link" target="_blank">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF9SURBVHgB7ZfRTcMwEIZ/h0hFPHWE9qUtQgiyAWxQNigjdBJgAsIG2aDZoAhRCE9khPJSRB5qzq4IogJ0ceIIofukSM7Fcf6cz+czIAiCIAj/GcXu2XvuorO6BvQJvdZFU2jEKPamyPtLTvcQXHZXFzT4uMo/slCYoPNqHHDG6R6Ai6aBvWFmjQdfsF/YIVZH8JKmM4ZSKVqEH8PbqCBCtp/b9vBhVmVa69BQSGjWCm8Cdw/r9QyDRUoh0WvLuwZ3wZSZbUqi9NEm7iGhin55AcnGtj4tbYGe2gWpcG7vQ0S2DZWjBu4ezqK8bI/uX6DNhhLmyA439tFjQovycuutW7KnFE5z193SXx7+yCDf2ZW6giN+Nw6T7oYLTYtzbmuRz8/GcMSf4MHduMweCsdUL0zKZz95n4E/wcHO1xjV+ggN8FdqCTYi2Dci2Df8847Jpz55OmBpqeDh9krI36gg2OPJwpycmfAFvxVUdekbNIuZtcQe8wVBEARBIN4BkDhgOD/HLNIAAAAASUVORK5CYII="
+                  alt="linkedin"
+                  class="me-2"
+                />
+              </a>
+              <p class="fw-medium fs-lg-3 fs-4">
+                linkedin<span class="fw-medium fs-lg-3 fs-4 ms-4"
+                  >職涯交流</span
+                >
+              </p>
+            </div>
+            <i class="bi bi-arrow-right fs-4"></i>
+          </li>
+          <li
+            class="d-lg-flex align-items-center justify-content-between border-bottom border-dark mb-4 position-relative"
+          >
+            <div class="d-flex">
+              <a
+                href="https://www.instagram.com/"
+                class="stretched-link"
+                target="_blank"
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMkSURBVHgB7ZfRUdtAEIb/kwiQTB6UDsSLbXBI7AoCHUAFkAoIFWAqwK6AoQJIBYQKIAFjzAvqIHrIMDaDdNm9O2MbW/hk4ZdE34zsk3Q6/drb3dsDcnJycnJy/mUEpsG/8zDf2YGQa3wGxB4N5U1+UAT0w8cFhGjgZjlAStILLl7vkMCancAJSKeG2+X9NI+kE1xo7UGwWH4ZWcmVR4jiAI4I4Tohoodw7HPuvEf99AcKUUHs0EdL30jYRXulDkvsBZdaPmR8p09kA+2P35CF4iWJZOEI0X23hGAptHnMgS0yMgLJD6cVy+5UaJ7TTG2hvcpjXNDhYfHeejx7wXA+m0ZjYleeDT5GkHWa0woFqxbokEupy+ILLLEXLIzPiegCSSKL1wcoXv1WrsMHtwvNw774uGHG+K7+2f+1Yh+WzNl2pCDzE++VmxU8Rqc6cwyGBZ0LbJP4NeqziWaZLduffudNSPe4ZZ1xUriEwV0YDg623iOOjdiAssg6BdEHtMuC/H7T5F7uczriJlHcG2uGgqPoWTTHe0oQC+u+reJm9cdTxN9+OkG3WzWivX7gGjgVpiS94OdIuWFG2h2bmoJqSD77VZ+ILWQkm2A1xWbFa62cJPbrPPYC1RufPezJbuEeXF8kwVZ+JbIJVsWL1GIW/1QS+xV+bZhWOE3BM8hrWNgkf+dwrJX5mnAPdB+cICNTpDV3WJRw68bKPhbuadm93ngSWmqtqWu9LOI4w5VZryCajWAz9VF3+CU8xXNi/SnfCnmMYlOSUF7xTtU1doU5uTniDq4zQ8FCaMHCHX1Js8wF+TqJPVLi+oSqshNOVfVJJoAlKZZmtiCt+XHCEq2tt63apXPd56YavDQk5ecKjcvGeLnfAGmKnzP1L+Xk5M9CJ4llYrGjx4x/whJ7wZ0HHVxcHnJVlhU9hq/aKnDtSLdFKl5RLSB6YinqyT+lq33TdcPROsPAmSWKPMTSgxv7iGiJ5g9XCuJ9qj9qmIlgpnRZo5y7h+xwQO7T7sXausx023y1v6PKS6hdCLWtCvDQZJqAcuMZOu/rtvu4nJycnJyc/4e/gTArkFSTJdIAAAAASUVORK5CYII="
+                  alt="Instagram"
+                  class="me-2"
+                />
+              </a>
+              <p class="fw-medium fs-lg-3 fs-4">
+                Instagram<span class="fw-medium fs-lg-3 fs-4 ms-4"
+                  >日常分享</span
+                >
+              </p>
+            </div>
+            <i class="bi bi-arrow-right fs-4"></i>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <p class="fw-medium fs-6 text-center py-5 mb-0">
+  © 2025 Alyse Wang. All rights reserved.
+</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 24,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
